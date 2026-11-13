@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-apex-red: #E31D2E;
+  --color-apex-red-hover: #C91726;
+  --color-apex-red-active: #A8121E;
+  --color-apex-red-subtle: #FFF1EF;
+  --color-apex-red-light: #FEE2E2;
+
+  --color-apex-dark: #101115;
+  --color-apex-dark-card: #18191E;
+  --color-apex-dark-surface: #222327;
+
+  --color-apex-gray-label: #2A2A2A;
+  --color-apex-gray-text: #7B7B7D;
+  --color-apex-gray-muted: #838385;
+  --color-apex-gray-border: #E0E0E0;
+  --color-apex-gray-input-border: #D1D5DB;
+  --color-apex-gray-placeholder: #9CA3AF;
+  --color-apex-gray-footer: #888888;
+  --color-apex-gray-nav: #C5C5C7;
+
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+}
+
+:root {
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+}
+
+body {
+  font-family: var(--font-barlow-condensed), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #101115;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hazard Stripes: Alternating white and red */
+.hazard-stripes {
+  background: repeating-linear-gradient(
+    90deg,
+    #ffffff 0px,
+    #ffffff 22px,
+    #E31D2E 22px,
+    #E31D2E 44px
+  );
+}
